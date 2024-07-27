@@ -1,0 +1,88 @@
+#app{
+    display: flex;
+    justify-content: center;
+
+    height: 100vh;
+    overflow: hidden;
+
+ 
+    
+    background: var(--Colors-Shape-shape-background, #131516);
+
+    color: var(--Colors-Text-text-body, #C8CDD0);
+    font-family: var(--Fonts-Family-Body, "Open Sans");
+    font-size: var(--Fonts-Size-Body-Sm, 0.875rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+aside{
+    padding: 1.25rem 1.25rem;
+
+    & .image-teste{
+        width: 400px;
+        height: 728px;
+        background: url("/assets/images/Background.svg");
+        background-size:cover;
+        background-repeat: no-repeat;  
+        overflow: hidden;
+        border-radius: 0.75rem;     
+    }
+
+    /* & .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        
+        padding: 2.5rem;
+
+        img{
+            width: 2.86569rem;
+            height: 3rem;
+        }
+
+        h1{
+            color: var(--Colors-Accent-pink, #FF598B);
+            font-family: var(--Fonts-Family-Logo, "Leckerli One");
+            font-size: var(--Fonts-Size-Logo, 2.5rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 0.25rem;
+            margin-top: 1rem;
+            
+        }
+
+        p{
+            color: var(--Colors-Text-text-heading, #F9F9F9);
+            font-family: var(--Fonts-Family-Body, "Open Sans");
+            font-size: var(--Fonts-Size-Body-Md, 1rem);
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;                
+        }
+    } */
+    
+}
+
+.container{
+
+    gap: var(--Fonts-Size-Logo, 2.5rem);   
+    border-radius: 0.75rem;
+    background: var(--Colors-Shape-shape-body, #212427); 
+    padding: 5rem 8.12rem;
+    width: 820px;
+    overflow:auto;
+    margin: 1.25rem 0rem;
+
+    & h2{
+        color: var(--Colors-Text-text-heading, #F9F9F9);
+        font-family: var(--Fonts-Family-Header, "Baloo 2");
+        font-size: var(--Fonts-Size-Header-Md, 1.75rem);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;        
+    }
+}

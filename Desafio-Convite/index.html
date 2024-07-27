@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio-Convite</title>
+
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <main id="app">
+        <aside class="image">
+            <div class="image-teste">
+                <!--                 <div class="title">
+                    <img src="assets/images/Logo.svg" alt="">
+                    <h1>Festivite</h1>
+                    <p>Crie um convite digital para o seu evento</p>
+                </div> -->
+            </div>
+        </aside>
+
+        <div class="container">
+
+            <h2>Crie seu convite</h2>
+
+            <form action="" method="post" enctype="multipart/form-data">
+                <fieldset class="child-info">
+
+                    <div class="calendar">
+                        <img src="assets/icons/calendar.svg" Icone calendar">
+                        <span>Sobre o evento</span>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="title">Título</label>
+                        <input type="text" name="title" id="title" placeholder="Nome do evento">
+                    </div>
+
+                    <div class="input-wrapper-container">
+                        <div class="input-wrapper-date">
+                            <label for="dateStart">Inicio</label>
+                            <input type="datetime-local" name="dateStart" id="dateStart" lang="pt-BR">
+                        </div>
+
+                        <div class="input-wrapper-date">
+                            <label for="dateStart-2">Fim</label>
+                            <input type="datetime-local" name="dateStart-2" id="dateStart-2" lang="pt-BR">
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper-container">
+                        <div class="input-wrapper-NC">
+                            <label for="checkbox">Tipo</label>
+                            <input type="text" name="address" id="address">
+                            <!-- <div class="input-wrapper-BT">
+                                <button class="sub-button">
+                                    <img src="assets/icons/presencial.svg" alt="">
+                                    Presencial
+                                </button>
+                                <button class="sub-button">
+                                    <img src="assets/icons/online.svg" alt="">
+                                    Online
+                                </button>
+                            </div> -->
+
+                        </div>
+
+                        <div class="input-wrapper-NC">
+                            <label for="address">Local</label>
+                            <input type="text" name="address" id="address" placeholder="Link ou endereço">
+                        </div>
+                    </div>
+
+                    <div class="textarea-wrapper">
+                        <label for="description">Descrição</label>
+                        <textarea name="description" id="description" cols="30" rows="6"
+                            placeholder="Escreva sobre os detalhes do evento" style="resize: none"></textarea>
+
+                    </div>
+
+                </fieldset>
+            </form>
+
+            <form action="" method="post" enctype="multipart/form-data">
+                <fieldset class=" second">
+
+                    <div class="personalization">
+                        <img src="assets/icons/paintbrush-vertical.svg" Icone calendar">
+                        <span>Sobre o evento</span>
+                    </div>
+
+                    <div class="name-color">Cor principal</div>
+
+                    <div class="colors">
+                        <a href="#"><img src="assets/icons/blue.svg" alt=""></a>
+                        <a href="#"><img src="assets/icons/navy.svg" alt=""></a>
+                        <a href="#"><img src="assets/icons/purple.svg" alt=""></a>
+                        <a href="#"><img src="assets/icons/fuschia.svg" alt=""></a>
+                        <a href="#"><img src="assets/icons/pink.svg" alt=""></a>
+                        <a href="#"><img src="assets/icons/danger.svg" alt=""></a>
+                        <a href="#"><img src="assets/icons/orange.svg" alt=""></a>
+                        <a href="#"><img src="assets/icons/yellow.svg" alt=""></a>
+                        <a href="#"><img src="assets/icons/lime.svg" alt=""></a>
+                        <a href="#"><img src="assets/icons/green.svg" alt=""></a>
+                        <a href="#"><img src="assets/icons/cyan.svg" alt=""></a>
+                    </div>
+
+                    <div class="name-color">Tema do evento</div>
+
+                    <div class="items">
+                        <div class="items-border">
+                            <a href="#"><img src="assets/images/aniversario.svg" alt=""></a>
+                            <strong>Aniversário</strong>
+                        </div>
+
+                        <div class="items-border">
+                            <a href="#"><img src="assets/images/infatil.svg" alt=""></a>
+                            <strong>Infantil</strong>
+                        </div>
+
+                        <div class="items-border">
+                            <a href="#"><img src="assets/images/formatura.svg" alt=""></a>
+                            <strong>Formatura</strong>
+                        </div>
+
+                        <div class="items-border">
+                            <a href="#"><img src="assets/images/casamento.svg" alt=""></a>
+                            <strong>Casamento</strong>
+                        </div>
+
+                        <div class="items-border">
+                            <a href="#"><img src="assets/images/chadebebe.svg" alt=""></a>
+                            <strong>Chá de bebe</strong>
+                        </div>
+
+                        <div class="items-border">
+                            <a href="#"><img src="assets/images/chadepanela.svg" alt=""></a>
+                            <strong>Chá de panela</strong>
+                        </div>
+
+                        <div class="items-border">
+                            <a href="#"><img src="assets/images/carnaval.svg" alt=""></a>
+                            <strong>Carnaval</strong>
+                        </div>
+
+                        <div class="items-border">
+                            <a href="#"><img src="assets/images/pascoa.svg" alt=""></a>
+                            <strong>Páscoa</strong>
+                        </div>
+
+                        <div class="items-border">
+                            <a href="#"><img src="assets/images/saojoao.svg" alt=""></a>
+                            <strong>São joão</strong>
+                        </div>
+
+                        <div class="items-border">
+                            <a href="#"><img src="assets/images/halloween.svg" alt=""></a>
+                            <strong>Halloween</strong>
+                        </div>
+
+                        <div class="items-border">
+                            <a href="#"><img src="assets/images/natal.svg" alt=""></a>
+                            <strong>Natal</strong>
+                        </div>
+
+                        <div class="items-border">
+                            <a href="#"><img src="assets/images/outro.svg" alt=""></a>
+                            <strong>Outro</strong>
+                        </div>
+                    </div>
+
+                    <div class="switch-toogle">
+                        <div class="name-color">Tema do evento</div>
+                        <div class="name-color">Foto de capa</div>
+                    </div>
+
+                    <div class="double-button">
+
+                        <div class="firstImage">
+                            <img src="assets/images/dark.svg" alt="">
+                            <strong>Escuro</strong>
+                        </div>
+                        
+
+                        <label class="file-upload-label" for="file-upload">
+                            <img src="assets/images/file-default.svg" alt="">
+                        </label>
+
+                        <input id="file-upload" type="file">
+                    </div>
+
+                </fieldset>
+            </form>
+
+            <form action="" method="post" enctype="multipart/form-data">
+                <fieldset class="third">
+
+                    <div class="contact">
+                        <img src="assets/icons/contact.svg" Icone calendar">
+                        <span>Dados para contato</span>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="Name">Nome</label>
+                        <input type="text" name="Name" id="Name" placeholder="Nome completo" required>
+
+                        <div class="error">
+                            <img src="assets/icons/alert-circle.svg" alt="icone alerta">
+                            <span class="needed">Campo obrigatório</span>
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper-container">
+                        <div class="input-wrapper-2">
+                            <label for="emails">E-mail</label>
+                            <input type="email" name="emails" id="emails" placeholder="exemplo@email.com" lang="pt-BR">
+                        </div>
+
+                        <div class="input-wrapper-2">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999 " lang="pt-BR">
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+
+            <div class="line-container"></div>
+
+            <footer>
+                <div class="checkbox-footer">
+                    <div class="info-footer">
+                        <input type="checkbox" id="checkbox1" class="checkbox">
+                        <label for="checkbox1">
+                            <span>Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></span>
+                        </label>
+                    </div>
+            
+                    <div class="info-footer">
+                        <input type="checkbox" id="checkbox2" class="checkbox">
+                        <label for="checkbox2">
+                            <span>Aceito receber atualizações e promoções por e-mail</span>
+                        </label>
+                    </div>
+            
+                    <div class="info-footer">
+                        <input type="checkbox" id="checkbox3" class="checkbox">
+                        <label for="checkbox3">
+                            <span>Aceito receber atualizações e promoções por SMS</span>
+                        </label>
+                    </div>
+                    
+                </div>
+            </footer>
+
+            <div class="button-submit">
+                <img src="assets/icons/Button-submit.svg" alt="">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

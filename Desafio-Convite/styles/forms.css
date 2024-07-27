@@ -1,0 +1,599 @@
+form{
+    margin-top: 1.5rem;
+}
+
+.child-info {
+    border: none;
+    display: grid;
+    gap:1.5rem;
+    margin-bottom: 3rem;
+
+    span{
+        color: var(--Colors-Text-text-heading, #F9F9F9);
+        font-family: var(--Fonts-Family-Header, "Baloo 2");
+        font-size: var(--Fonts-Size-Header-Sm, 1.125rem);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.25rem; /* 111.111% */        
+    }
+
+    .calendar{
+        display: flex;
+        align-items: center;
+        gap: var(--Fonts-Size-Body-Xs, 0.75rem);
+    }
+
+    .input-wrapper{
+        display: flex;
+        width: 35rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        
+        label{
+            color: var(--Colors-Text-text-body, #C8CDD0);
+            font-family: var(--Fonts-Family-Body, "Open Sans");
+            font-size: var(--Fonts-Size-Body-Sm, 0.875rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;            
+        }
+
+        input{
+            display: flex;
+            height: 3rem;
+            padding: 0rem var(--Fonts-Size-Body-Md, 1rem);
+            align-items: center;
+            gap: 0.5rem;
+            align-self: stretch;
+            
+            border-radius: 0.5rem;
+            border: 1px solid var(--Colors-Input-input-stroke, #363B40);
+            background: var(--Colors-Input-input-base, #1C1F21);
+
+            color: var(--Colors-Input-input-placeholder, #869198);
+            font-family: var(--Fonts-Family-Body, "Open Sans");
+            font-size: var(--Fonts-Size-Body-Md, 1rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    .input-wrapper-container {
+        display: flex;
+        gap: 1rem;
+    }
+          
+    .input-wrapper-date{
+        display: flex;
+        width: 17rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+
+        label{
+            
+            color: var(--Colors-Text-text-body, #C8CDD0);
+            font-family: var(--Fonts-Family-Body, "Open Sans");
+            font-size: var(--Fonts-Size-Body-Sm, 0.875rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;            
+        }
+
+        
+        input{
+            display: flex;
+            height: 3rem;
+            padding: 0rem var(--Fonts-Size-Body-Md, 1rem);
+            align-items: center;
+            gap: 0.5rem;
+            align-self: stretch;
+            
+            border-radius: 0.5rem;
+            border: 1px solid var(--Colors-Input-input-stroke, #363B40);
+            background: var(--Colors-Input-input-base, #1C1F21);
+
+            color: var(--Colors-Input-input-placeholder, #869198);
+            font-family: var(--Fonts-Family-Body, "Open Sans");
+            font-size: var(--Fonts-Size-Body-Md, 1rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+
+            -webkit-appearance: none;
+            -moz-appearance: textfield;
+            appearance: none;
+            position: relative;
+        }
+
+        input::-webkit-datetime-edit {
+            position: relative;
+        }
+    
+        input::-webkit-calendar-picker-indicator {
+            display: none;
+        }
+    }
+
+    .input-wrapper-NC{
+        display: flex;
+        width: 17rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+
+        label{
+            
+            color: var(--Colors-Text-text-body, #C8CDD0);
+            font-family: var(--Fonts-Family-Body, "Open Sans");
+            font-size: var(--Fonts-Size-Body-Sm, 0.875rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;            
+        }
+
+        
+        input{
+            display: flex;
+            height: 3rem;
+            padding: 0rem var(--Fonts-Size-Body-Md, 1rem);
+            align-items: center;
+            gap: 0.5rem;
+            align-self: stretch;
+            
+            border-radius: 0.5rem;
+            border: 1px solid var(--Colors-Input-input-stroke, #363B40);
+            background: var(--Colors-Input-input-base, #1C1F21);
+
+            color: var(--Colors-Input-input-placeholder, #869198);
+            font-family: var(--Fonts-Family-Body, "Open Sans");
+            font-size: var(--Fonts-Size-Body-Md, 1rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;           
+
+            -webkit-appearance: none;
+            -moz-appearance: textfield;
+            appearance: none;
+            position: relative;
+        }
+
+        input::-webkit-datetime-edit {
+            position: relative;
+        }
+    
+        input::-webkit-calendar-picker-indicator {
+            display: none;
+        }
+    }
+
+    .textarea-wrapper{
+        display: flex;
+        width: 35rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        
+        label{
+            color: var(--Colors-Text-text-body, #C8CDD0);
+            font-family: var(--Fonts-Family-Body, "Open Sans");
+            font-size: var(--Fonts-Size-Body-Sm, 0.875rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;            
+        }
+
+        textarea{
+
+            display: flex;
+            height: 8.5rem;
+            padding: var(--Fonts-Size-Body-Md, 1rem);
+            align-items: flex-start;
+            gap: 0.5rem;
+            align-self: stretch;
+
+            border-radius: 0.5rem;
+            border: 1px solid var(--Colors-Input-input-stroke, #363B40);
+            background: var(--Colors-Input-input-base, #1C1F21);
+
+            color: var(--Colors-Input-input-placeholder, #869198);
+            font-family: var(--Fonts-Family-Body, "Open Sans");
+            font-size: var(--Fonts-Size-Body-Md, 1rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }    
+    }
+
+    /* .input-wrapper-BT{
+        width: 100%;
+        height: 3rem;
+
+        border-radius: 0.5rem;
+       
+        border: 1px solid var(--Colors-Input-input-stroke, #363B40);
+        background: var(--Colors-Input-input-base, #1C1F21);  
+        
+        & button{
+            width: 7.5rem;
+            height: 2.5rem;
+
+            border-radius: .25rem;
+            padding: .25rem;
+            margin: .25rem;
+
+            border-radius: var(--border-radius-border-sm, 0.3125rem);
+            background: var(--Colors-Shape-shape-button, #2D3136);    
+
+            img{
+                margin-right: 1rem;
+            }
+
+            p{
+                display: flex;
+                align-items: center;
+                color: var(--Colors-Text-text-heading, #F9F9F9);
+                font-family: var(--Fonts-Family-Body, "Open Sans");
+                font-size: var(--Fonts-Size-Body-Sm, 0.875rem);
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+    } */
+
+    
+}
+
+.second {
+    border: none;
+    display: grid;
+    gap:1.5rem;
+    margin-bottom: 3rem;
+
+    span{
+        color: var(--Colors-Text-text-heading, #F9F9F9);
+        font-family: var(--Fonts-Family-Header, "Baloo 2");
+        font-size: var(--Fonts-Size-Header-Sm, 1.125rem);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.25rem; /* 111.111% */    
+    }
+
+    .personalization{
+        display: flex;
+        align-items: center;
+        gap: var(--Fonts-Size-Body-Xs, 0.75rem);
+    }
+
+    .name-color{
+        color: #FFF;
+        font-family: var(--Fonts-Family-Body, "Open Sans");
+        font-size: var(--Fonts-Size-Body-Sm, 0.875rem);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .colors{
+        display: flex;
+        justify-content: flex-start;
+        
+
+        a{           
+            display: flex;
+            width: 2.5rem;
+            height: 2.5rem;
+            padding: 0.375rem;
+            margin-right: 0.75rem;
+
+            border-radius: 62.4375rem;
+            background: var(--Colors-Shape-shape-button, #2D3136);        
+        }
+    }
+
+    .items{
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 0.5rem;
+        align-self: stretch;
+        flex-wrap: wrap;
+    }
+
+    .items-border{
+        display: flex;
+        width: 8.375rem;
+        padding: 0.25rem 0.25rem 0.5rem 0.25rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        
+        border-radius: 0.5rem;
+        border: 1px solid var(--Colors-Input-input-stroke, #363B40);
+        background: var(--Colors-Shape-shape-button, #2D3136);
+
+        margin-bottom: 1.75rem;
+
+        strong{
+            color: var(--Colors-Text-text-heading, #F9F9F9);
+            
+            font-family: var(--Fonts-Family-Body, "Open Sans");
+            font-size: var(--Fonts-Size-Body-Sm, 0.875rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;            
+        }
+    }
+
+    .double-button{
+        display: flex;
+        gap: 5rem;
+
+        
+        .firstImage{
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+    }
+
+    .switch-toogle{
+        display: flex;
+        height: 1rem;
+        align-items: center;
+        gap: var(--Fonts-Size-Body-Xs, 6rem);
+        align-self: stretch;
+
+    }   
+
+    .button-check{
+        width: 4rem;
+        height: 2rem;
+        background-color: #1C1F21;
+        border-radius: 62.4rem;
+        cursor: pointer;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    .file-upload-label {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+}
+
+.third {
+    border: none;
+    display: grid;
+    gap:1.5rem;
+    margin-bottom: 3rem;
+
+    span{
+        color: var(--Colors-Text-text-heading, #F9F9F9);
+        font-family: var(--Fonts-Family-Header, "Baloo 2");
+        font-size: var(--Fonts-Size-Header-Sm, 1.125rem);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.25rem; /* 111.111% */    
+    }
+
+    .contact{
+        display: flex;
+        align-items: center;
+        gap: var(--Fonts-Size-Body-Xs, 0.75rem);
+    }
+
+    .input-wrapper{
+        display: flex;
+        width: 35rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        
+        label{
+            color: var(--Colors-Text-text-body, #C8CDD0);
+            font-family: var(--Fonts-Family-Body, "Open Sans");
+            font-size: var(--Fonts-Size-Body-Sm, 0.875rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;            
+        }
+
+        input{
+            display: flex;
+            height: 3rem;
+            padding: 0rem var(--Fonts-Size-Body-Md, 1rem);
+            align-items: center;
+            gap: 0.5rem;
+            align-self: stretch;
+            
+            border-radius: 0.5rem;
+            border: 1px solid var(--Colors-Feedback-danger, #FF5959);
+            background: var(--Colors-Input-input-base, #1C1F21);
+
+            color: var(--Colors-Input-input-placeholder, #869198);
+            font-family: var(--Fonts-Family-Body, "Open Sans");
+            font-size: var(--Fonts-Size-Body-Md, 1rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            
+            
+        }
+
+        .error{
+            display: flex;
+            gap: 0.5rem;
+
+            img{
+                width: 1rem;
+                height: 1rem;
+            }
+
+            span{
+                flex: 1 0 0;
+                color: var(--Colors-Feedback-danger, #FF5959);
+                font-family: var(--Fonts-Family-Body, "Open Sans");
+                font-size: var(--Fonts-Size-Body-Xs, 0.75rem);
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;                
+            }
+
+         
+            
+        }
+
+        
+
+
+    }
+
+    .input-wrapper-container {
+        display: flex;
+        gap: 1rem;
+    }
+          
+    .input-wrapper-2{
+        display: flex;
+        width: 17rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+
+        label{
+            
+            color: var(--Colors-Text-text-body, #C8CDD0);
+            font-family: var(--Fonts-Family-Body, "Open Sans");
+            font-size: var(--Fonts-Size-Body-Sm, 0.875rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;            
+        }
+
+        
+        input{
+            display: flex;
+            height: 3rem;
+            padding: 0rem var(--Fonts-Size-Body-Md, 1rem);
+            align-items: center;
+            gap: 0.5rem;
+            align-self: stretch;
+            
+            border-radius: 0.5rem;
+            border: 1px solid var(--Colors-Input-input-stroke, #363B40);
+            background: var(--Colors-Input-input-base, #1C1F21);
+
+            color: var(--Colors-Input-input-placeholder, #869198);
+            font-family: var(--Fonts-Family-Body, "Open Sans");
+            font-size: var(--Fonts-Size-Body-Md, 1rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            -webkit-appearance: none;
+            -moz-appearance: textfield;
+            appearance: none;
+            position: relative;
+        }
+
+        input::-webkit-datetime-edit {
+            position: relative;
+        }
+    
+        input::-webkit-calendar-picker-indicator {
+            display: none;
+        }
+    }
+}
+
+.line-container{
+    border-bottom: 1px solid rgba(54, 59, 64, 1); 
+    width: 100%; 
+    margin: 1rem 0; 
+    margin-bottom: 2.5rem;
+}
+
+.checkbox-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    align-self: stretch;
+    margin-bottom: 3rem;
+
+    .info-footer {
+        display: flex;
+        padding: 0.25rem 0;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    
+    .checkbox {
+        display: none;
+    }
+    
+    .checkbox + label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .checkbox + label:before {
+        content: '';
+        display: inline-block;
+        width: var(--Fonts-Size-Body-Md, 1rem);
+        height: var(--Fonts-Size-Body-Md, 1rem);
+        flex-shrink: 0;
+        border-radius: 0.25rem;
+        background: var(--Colors-Input-input-base, #1C1F21);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 0.75rem;
+        transition: background 0.3s ease;
+    }
+    
+    .checkbox:checked + label:before {
+        border: 1px solid var(--Colors-Brand-brand-light, #59B2FF);
+        background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.6868 3.64645C13.8821 3.84171 13.8821 4.15829 13.6868 4.35355L6.35351 11.6869C6.15825 11.8821 5.84167 11.8821 5.64641 11.6869L2.31307 8.35355C2.11781 8.15829 2.11781 7.84171 2.31307 7.64645C2.50833 7.45118 2.82492 7.45118 3.02018 7.64645L5.99996 10.6262L12.9797 3.64645C13.175 3.45118 13.4916 3.45118 13.6868 3.64645Z" fill="%2359B2FF"/></svg>');
+    }
+    
+    span {
+        color: var(--Colors-Text-text-body, #C8CDD0);
+        font-family: var(--Fonts-Family-Body, "Open Sans");
+        font-size: var(--Fonts-Size-Body-Sm, 0.875rem);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    strong {
+        color: var(--Colors-Brand-brand-light, #59B2FF);
+        font-family: var(--Fonts-Family-Body, "Open Sans");
+        font-size: var(--Fonts-Size-Body-Sm, 0.875rem);
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+}
+
+.button-submit {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    
+}
+
+
+
+
